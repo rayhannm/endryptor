@@ -18,11 +18,12 @@ Endryptor is a simple yet powerful tool for encrypting and decrypting files usin
 1. Clone this repository:
 ```bash
 git clone https://github.com/rayhannm/endryptor.git
-
-
+```
 
 2. Navigate to the project directory:
+```bash
 cd endryptor
+```
 
 Install the required dependencies:
 pip install -r requirements.txt
