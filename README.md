@@ -24,12 +24,26 @@ git clone https://github.com/rayhannm/endryptor.git
 ```bash
 cd endryptor
 ```
-
-Install the required dependencies:
-pip install -r requirements.txt
+3. Run the file:
+```bash
+python file.py
+```
 
 ## Usage
 
-Encrypting a File
+Encrypting and Decyrpting a File:
 
-To encrypt a file, use the following command:
+To encrypt or decrypt a file, choose option 1 or option 2. 
+
+```bash
+Choose an option:
+1. Encrypt a file
+2. Decrypt a file
+3. Exit
+Enter your choice (1/2/3):
+```
+
+
+
+
+
