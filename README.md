@@ -43,6 +43,21 @@ Choose an option:
 Enter your choice (1/2/3):
 ```
 
+Enter a password. This will be used to encrypt and decrypt the file.
+```bash
+Enter your choice (1/2/3): 1
+Enter the file name to encrypt: test.py            
+Enter your password: 
+File test.py encrypted successfully.
+```
+```bash
+Enter your choice (1/2/3): 2
+Enter the file name to decrypt: test.py.enc
+Enter your password: 
+File test.py.enc decrypted successfully
+```
+
+
 
 
 
