@@ -2,6 +2,7 @@ from Cryptodome.Cipher import AES
 from Cryptodome.Random import get_random_bytes
 from Cryptodome.Protocol.KDF import PBKDF2
 import os
+import getpass
 
 # Derive key from password
 def get_key_from_password(password, salt=None):
@@ -59,7 +60,7 @@ def main():
             if not os.path.isfile(file_name):
                 print("Error: File does not exist. Please try again.")
                 continue
-            password = input("Enter a password for encryption: ")
+            password = getpass.getpass(prompt="Enter your password: ")
             encrypt_file(file_name, password)
         elif choice == '2':
             file_name_enc = input("Enter the file name to decrypt: ").strip()
@@ -69,7 +70,7 @@ def main():
             if not file_name_enc.endswith('.enc'):
                 print("Error: File is not encrypted. Please provide a valid '.enc' file.")
                 continue
-            password = input("Enter the password for decryption: ")
+            password = getpass.getpass(prompt="Enter your password: ")
             decrypt_file(file_name_enc, password)
         elif choice == '3':
             print("Exiting the program. Goodbye!")
