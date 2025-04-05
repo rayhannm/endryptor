@@ -50,6 +50,7 @@ Enter the file name to encrypt: test.py
 Enter your password: 
 File test.py encrypted successfully.
 ```
+Encrypted file will automatically end with `.enc`
 ```bash
 Enter your choice (1/2/3): 2
 Enter the file name to decrypt: test.py.enc
