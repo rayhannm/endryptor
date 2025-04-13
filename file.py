@@ -41,9 +41,11 @@ def decrypt_file(file_path, password):
     try:
         data = cipher.decrypt_and_verify(ciphertext, tag)
         original_file = file_path.replace(".enc", "")
-        with open(original_file, 'wb') as f:
+        decrypted_file = original_file + ".dec"  # Create a new file with .dec extension
+        with open(decrypted_file, 'wb') as f:
             f.write(data)
         print(f"File {file_path} decrypted successfully.")
+        print(f"Decrypted file saved as {decrypted_file}.")
     except ValueError:
         print("Decryption failed! The password may be incorrect or the file may be corrupted.")
 
